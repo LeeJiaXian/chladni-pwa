@@ -1,0 +1,18 @@
+# 機密與環境變數
+.env
+.env.*
+*.pem
+*.key
+
+# 本機工具設定
+.claude/
+
+# 本機開發素材（不部署到 GitHub Pages）
+chladni_pwa_step_4.html
+chladni_pwa_step_5_manifest_json_sw_js_index_html.md
+
+# 雜項
+__pycache__/
+node_modules/
+*.log
+.DS_Store
