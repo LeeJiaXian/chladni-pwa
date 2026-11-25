@@ -1,15 +1,30 @@
 /**
- * Chladni-PWA Service Worker (v1)
+ * Chladni-PWA Service Worker (v2)
  * Strategy: Cache-First with Background Update + Clean Redirect Sanitization
+ * v2：Tailwind 改為預先 build 的 assets/app.css、字型改自架，全部同源預快取，首次安裝即可完全離線
  */
-const CACHE_NAME = 'chladni-pwa-v1';
+const CACHE_NAME = 'chladni-pwa-v2';
 
 const PRECACHE_URLS = [
   './',
   './index.html',
   './manifest.json',
+  './assets/app.css',
   './icons/icon-192.png',
   './icons/icon-512.png',
+  './fonts/inter-cyrillic-ext.woff2',
+  './fonts/inter-cyrillic.woff2',
+  './fonts/inter-greek-ext.woff2',
+  './fonts/inter-greek.woff2',
+  './fonts/inter-latin-ext.woff2',
+  './fonts/inter-latin.woff2',
+  './fonts/inter-vietnamese.woff2',
+  './fonts/jetbrains-mono-cyrillic-ext.woff2',
+  './fonts/jetbrains-mono-cyrillic.woff2',
+  './fonts/jetbrains-mono-greek.woff2',
+  './fonts/jetbrains-mono-latin-ext.woff2',
+  './fonts/jetbrains-mono-latin.woff2',
+  './fonts/jetbrains-mono-vietnamese.woff2',
 ];
 
 /**

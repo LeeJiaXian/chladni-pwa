@@ -1,0 +1,8 @@
+{
+  "name": "chladni-pwa",
+  "private": true,
+  "description": "圓形鼓皮克拉尼模擬器 × Web Audio 五維心理聲學引擎（PWA）",
+  "scripts": {
+    "build:css": "npx --yes tailwindcss@3.4.17 -c tailwind.config.js -i src/input.css -o assets/app.css --minify"
+  }
+}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Chladni-PWA Step 4 — 圓形鼓皮克拉尼模擬器 × 五維心理聲學引擎</title>
+  <title>Chladni-PWA — 圓形鼓皮克拉尼模擬器 × 五維心理聲學引擎</title>
   <!-- PWA Manifest & Theme Color -->
   <link rel="manifest" href="./manifest.json" />
   <meta name="theme-color" content="#06080e" />
@@ -14,34 +14,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Chladni" />
   <link rel="apple-touch-icon" sizes="192x192" href="./icons/icon-192.png" />
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Inter & JetBrains Mono Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
-          },
-          colors: {
-            obsidian: '#06080e',
-            panel: '#0c101b',
-            gold: {
-              300: '#f7e0a3',
-              400: '#ecc573',
-              500: '#d4a34b',
-            },
-          },
-        },
-      },
-    };
-  </script>
+  <!-- Tailwind CSS（預先 build，含自架 Inter / JetBrains Mono 字型；修改 class 後執行 npm run build:css） -->
+  <link rel="stylesheet" href="./assets/app.css" />
   <style>
     body {
       background-color: #06080e;
@@ -156,7 +130,7 @@
             Chladni-PWA <span class="text-gold-400">圓形鼓皮克拉尼模擬器</span>
           </h1>
           <p class="text-xs text-slate-400">
-            Step 4 · Web Audio 4096-FFT 五維心理聲學 DSP · 三層防閃爍 · 以歌辨形 / 鎖定形狀找歌
+            Web Audio 4096-FFT 五維心理聲學 DSP · 三層防閃爍 · 以歌辨形 / 鎖定形狀找歌
           </p>
         </div>
       </div>
